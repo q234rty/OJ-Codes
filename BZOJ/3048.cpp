@@ -18,19 +18,19 @@ struct segtree{
 	}
 	int ql,qr;
 	int query(int o,int l,int r){
-        if (ql<=l && qr>=r)
-            return sumv[o];
-        int mid=(l+r)/2;
-        int ans=0;
-        if (ql<=mid)
-            ans+=query(o*2,l,mid);
-        if (qr>mid)
-            ans+=query(o*2+1,mid+1,r);
-        return ans;
+        	if (ql<=l && qr>=r)
+            		return sumv[o];
+        	int mid=(l+r)/2;
+        	int ans=0;
+        	if (ql<=mid)
+            		ans+=query(o*2,l,mid);
+        	if (qr>mid)
+            		ans+=query(o*2+1,mid+1,r);
+        	return ans;
 	}
 	int rank(int x){
-        ql=1,qr=x;
-        return query(1,1,n);
+        	ql=1,qr=x;
+        	return query(1,1,n);
 	}
 	int p,v;
 	void add(int o,int l,int r){
