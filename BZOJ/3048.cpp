@@ -18,7 +18,7 @@ struct segtree{
 	}
 	int ql,qr;
 	int query(int o,int l,int r){
-	    if (ql<=l && qr>=r)
+        if (ql<=l && qr>=r)
             return sumv[o];
         int mid=(l+r)/2;
         int ans=0;
