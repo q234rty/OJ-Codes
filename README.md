@@ -1,2 +1,2 @@
 # OJ-Codes
-这是我在BZOJ、UOJ、vijos上的一些AC代码。 
+这是我的一些AC代码。 
